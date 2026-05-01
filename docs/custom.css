@@ -1,0 +1,150 @@
+/* =========================================
+   洛谷风格主题 (Docsify 自定义)
+   ========================================= */
+
+/* ---------- 1. 全局排版与字体 ---------- */
+/* 设定文档整体背景和字体，营造清爽的阅读感 */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    /* 采用系统默认字体栈，保证不同平台的显示一致性 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ---------- 2. 左侧导航栏 (Sidebar) ---------- */
+/* 目标网页的左侧导航栏底色为浅灰，条目清晰 */
+.sidebar {
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    border-right: 1px solid #eee; /* 右侧添加一条淡淡的分割线 */
+    padding: 1.5rem 0; /* 调整上下内边距 */
+}
+
+/* 导航栏中的链接样式，颜色柔和，无下划线 */
+.sidebar ul li a {
+    color: #555;
+    font-size: 14px;
+    padding: 0.3rem 1.5rem; /* 增加左右内边距，让文字更透气 */
+    display: block;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* 鼠标悬停和当前激活页面的链接样式 */
+.sidebar ul li a:hover,
+.sidebar ul li.active > a {
+    color: #3498db; /* 洛谷标志性的蓝色 */
+    background-color: transparent;
+    font-weight: 500;
+}
+
+/* ---------- 3. 右侧内容区域 ---------- */
+/* 为内容区域留出舒适的边距 */
+.markdown-section {
+    padding: 2rem 3rem;
+    max-width: 850px; /* 限制最大宽度，避免文字行过长 */
+}
+
+/* 优化标题样式，使其层级分明 */
+.markdown-section h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+    color: #222;
+}
+
+.markdown-section h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: #333;
+}
+
+.markdown-section h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    color: #444;
+}
+
+/* 优化段落间距，提升阅读体验 */
+.markdown-section p {
+    margin-bottom: 1em;
+}
+
+/* ---------- 4. 表格样式 ---------- */
+/* 让表格看起来更干净、现代 */
+.markdown-section table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+
+.markdown-section table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid #dfe2e5;
+    text-align: left;
+}
+
+.markdown-section table td {
+    padding: 10px 16px;
+    border: 1px solid #dfe2e5;
+}
+
+.markdown-section table tr:nth-child(even) {
+    background-color: #fafbfc; /* 隔行变色，提升可读性 */
+}
+
+/* ---------- 5. 代码块 ---------- */
+/* 让代码块风格与整体保持一致，背景偏灰，不使用深色主题 */
+.markdown-section pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
+}
+
+.markdown-section code {
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 85%;
+}
+
+.markdown-section pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ---------- 6. 链接与提示框 ---------- */
+/* 链接使用洛谷蓝，提示框保持浅色系 */
+.markdown-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.markdown-section a:hover {
+    text-decoration: underline;
+}
+
+/* 重要提示框（如：> 提示内容） */
+.markdown-section blockquote.tip,
+.markdown-section .tip {
+    background-color: #f0f7ff;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #333;
+}
