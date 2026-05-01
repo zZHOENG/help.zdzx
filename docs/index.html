@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>帮助中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Docsify 核心样式和脚本，使用 jsdelivr CDN -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '帮助中心',           // 左上角站点名称
+      loadSidebar: true,        // 启用侧边栏，会加载 _sidebar.md
+      subMaxLevel: 2,           // 自动生成二级标题目录
+      search: {                 // 全文搜索
+        paths: 'auto',
+        placeholder: '搜索文档',
+      },
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 搜索插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 其它可选插件：如 emoji、代码高亮等可按需添加 -->
+</body>
+</html>
